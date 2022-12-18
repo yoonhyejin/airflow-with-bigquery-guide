@@ -1,5 +1,15 @@
-# What to do more
+# Validation
 
-Dbt 로 validation 하면 더 조음~ 
+There is a lot of ways to validate the ETL process and results. For example, dbt is one of the great way to validate the pipeline.
 
-여기서는 bq에서 bq 로 하는 것만 다뤘으나 gsheet to bigquery, mysql to bigquery 등 상황에 따라 여러 활용을 할 수 있다.
+However, you can use BigQueryValueCheckOperator to add a simple validation task to your dag. 
+```python
+check_value = BigQueryValueCheckOperator(
+    task_id="check_value",
+    sql=f"SELECT COUNT(*) FROM {DATASET}.{TABLE_1}",
+    pass_value=4,
+    use_legacy_sql=False,
+    location=location,
+)
+```
+'

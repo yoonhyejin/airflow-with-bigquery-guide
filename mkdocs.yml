@@ -1,11 +1,11 @@
 site_name: Airflow with BigQuery Guide
 site_url: https://example.com/
 nav:
-  - Home: index.md
+  - Introduction: index.md
   - Set up: 01-set-up.md
-  - Write DAG: 02-write-dag.md
-  - Run DAG: 03-run-dag.md
-  - What To Do More: 04-what-to-do-more.md
+  - Write DAG with ETL Tasks: 02-write-dag.md
+  - Run DAG on Airflow: 03-run-dag.md
+  - Validation: 04-what-to-do-more.md
   - Troubleshooting: 05-troubleshooting.md
 
 theme: material

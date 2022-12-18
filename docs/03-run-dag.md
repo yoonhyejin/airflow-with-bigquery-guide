@@ -1,5 +1,13 @@
-# Testing
+# Run pipeline
 
-Localhost에서 Dag 를 trigger 한다.
+## Trigger DAG 
+Place `tutorial_dag.py` and `query.sql` under `/dags` directory. 
+After slight delay, you can search the DAG on Web UI. 
 
-초록불 뜨면 성공.
+Trigger the DAG manually. 
+
+## Check Data on BigQuery
+
+Check the BigQuery table to see the data mart that is just created.
+
+![data-mart](/img/data-mart.png)

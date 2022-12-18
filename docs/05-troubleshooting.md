@@ -1,3 +1,7 @@
 # Troubleshooting
 
-발생할 수 있는 여러 문제들 (데이터 문제, 권한 문제, ….) 에 대한 대응
+### Is daemon running? 
+You need docker engine running locally to deploy airflow via docker-compose. Check if the docker is running.
+
+### Permission Denied
+Check if the service account has valid permissions.

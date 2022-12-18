@@ -8,6 +8,7 @@ authors = ["Yoon Hyejin <0327jane@gmail.com>"]
 python = "^3.9"
 mkdocs = "^1.4.2"
 mkdocs-material = "^8.5.11"
+apache-airflow = "^2.5.0"
 
 [tool.poetry.dev-dependencies]
 
