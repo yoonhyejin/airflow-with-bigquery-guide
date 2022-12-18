@@ -1,0 +1,18 @@
+site_name: Airflow with BigQuery Guide
+site_url: https://example.com/
+nav:
+  - Home: index.md
+  - Set up: 01-set-up.md
+  - Write DAG: 02-write-dag.md
+  - Run DAG: 03-run-dag.md
+  - What To Do More: 04-what-to-do-more.md
+  - Troubleshooting: 05-troubleshooting.md
+
+theme: material
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
