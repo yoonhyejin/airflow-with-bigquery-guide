@@ -3,12 +3,13 @@ from datetime import datetime
 
 from airflow import models
 from airflow.contrib.operators.bigquery_operator import BigQueryOperator
+from airflow.providers.google.cloud.operators.bigquery import BigQueryValueCheckOperator
 
 project_id = 'starlit-sum-372013'
 destination_table_id = 'test_dataset.long_trips'
 
 with models.DAG(
-    dag_id="test_etl_dag",
+    dag_id="test_etl_dag_with_validation",
     schedule="@once",
     start_date=datetime(2022, 12, 1),
     catchup=False,
@@ -23,3 +24,22 @@ with models.DAG(
         gcp_conn_id='google_cloud_conn_id',
         use_legacy_sql=False
     )
+
+    validate_1 = BigQueryValueCheckOperator(
+        task_id="validate_1",
+        sql='bigquery_value_check.sql',
+        pass_value=0,
+        gcp_conn_id='google_cloud_conn_id',
+        use_legacy_sql=False,
+    )
+
+    validate_2 = BigQueryValueCheckOperator(
+        task_id="validate_2",
+        sql='bigquery_check.sql',
+        pass_value=0,
+        gcp_conn_id='google_cloud_conn_id',
+        use_legacy_sql=False,
+    )
+
+
+    run_etl >> validate_1 >> validate_2

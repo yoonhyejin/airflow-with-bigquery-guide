@@ -2,11 +2,13 @@ site_name: Airflow with BigQuery Guide
 site_url: https://example.com/
 nav:
   - Introduction: index.md
-  - Set up: 01-set-up.md
-  - Write DAG with ETL Tasks: 02-write-dag.md
-  - Run DAG on Airflow: 03-run-dag.md
-  - Validation: 04-what-to-do-more.md
-  - Troubleshooting: 05-troubleshooting.md
+  - Set Up Environment: 01-set-up.md
+  - Authenticate Google Cloud Credentials: 02-authenticate.md
+  - Write DAG with ETL Tasks: 03-write-dag.md
+  - Run DAG on Airflow: 04-run-dag.md
+  - Validation: 05-validation.md
+  - Troubleshooting: 06-troubleshooting.md
+  - Wrap Up: 07-wrap-up.md
 
 theme: material
 
