@@ -9,6 +9,7 @@ python = "^3.9"
 mkdocs = "^1.4.2"
 mkdocs-material = "^8.5.11"
 apache-airflow = "^2.5.0"
+isort = "^5.11.3"
 
 [tool.poetry.dev-dependencies]
 
