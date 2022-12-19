@@ -22,7 +22,7 @@ destination_table_id = '{your_dataset_id}.long_trips'
 with models.DAG(
     dag_id="test_etl_dag",
     schedule="@once",
-    start_date=datetime(2021, 1, 1),
+    start_date=datetime(2022, 12, 1),
     catchup=False,
     tags=["example", "bigquery"],
 ) as dag:

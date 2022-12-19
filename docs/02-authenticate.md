@@ -1,6 +1,6 @@
 # Authenticate Google Cloud Connection
 
-To integrate Airflow with Google, you need to create a connection between GCP and Airflow.
+To integrate Airflow with BigQuery, you need to create a connection between GCP and Airflow.
 
 ## Create a GCP Service Account 
 

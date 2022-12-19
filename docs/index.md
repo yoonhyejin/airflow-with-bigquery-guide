@@ -1,5 +1,4 @@
 # A Friendly Guide to integrate Airflow with BigQuery
-
 Airflow is a great tool used for scheduling and executing ETL(Extract, Tranform, Load) in modern data engineering. 
 Also, BigQuery is one of the most frequently used data warehouse for ETL because of its flexibilty and convienience.
 
@@ -7,8 +6,8 @@ This guide introduces how to create simple batch ETL pipeline through integratin
 Following tutorial is appropriate for users who have basic understanding of ETL process, Airflow and Bigquery.
 
 ## Requirements
-- Docker Desktop
-- GCP account with a valid GCP project
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [Google Cloud Platform](https://cloud.google.com/) account and project
 
 ## Goals
 - Create a simple DAG that writes a BigQuery SQL result to a BigQuery table

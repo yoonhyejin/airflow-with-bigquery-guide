@@ -2,6 +2,11 @@
 
 ## Trigger DAG 
 Place `tutorial_dag.py` and `query.sql` under `/dags` directory like below. 
+```tree
+├── dags
+│   ├── tutorial_dag.py
+│   └── query.sql
+```
 After slight delay, you can search the DAG on Web UI. 
 
 Activate and trigger the DAG manually. 

@@ -17,7 +17,7 @@ check_value = BigQueryValueCheckOperator(
     use_legacy_sql=False,
 )
 ```
-This operator checks if the result of the SQL Query is equal to `pass_value`. 
+This operator checks if the result of the SQL query is equal to `pass_value`. 
 
 For example, if you want to validate that none of the rows in target table has `duration_minutes` value less than 100, 
 you could write following query and set `pass_value` to 0. 
@@ -41,7 +41,7 @@ check_value = BigQueryCheckOperator(
     use_legacy_sql=False,
 )
 ```
-This operator checks if every row of the result of the SQL Query is `true`. 
+This operator checks if every row of the result of the SQL query is `true`. 
 
 For example, if you want to validate that at least one row in the target table have `duration_minutes` bigger than 1000,
 you can write the following query. 
