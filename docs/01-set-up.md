@@ -1,10 +1,10 @@
 # Set Up 
 
 ## Set Up Airflow on Local Environment
-This guide uses docker-compose to deploy Airflow on local environment. 
-If you already have Airflow deployed on cloud environment, please skip this part.
+This guide uses docker-compose to deploy Airflow on the local environment. 
+If you already have Airflow deployed on a cloud environment, please skip this part.
 
-Make sure you have Docker Desktop engine running on local environment before installation. 
+Make sure you have Docker Desktop engine running on the local environment before installation. 
 
 ```bash
 # download docker-compose.yaml for Airflow 
@@ -18,7 +18,7 @@ docker-compose up airflow-init
 # install all components
 docker-compose up
 ```
-Visit `localhost:8080` in the browser and login with default credentials.
+Visit `localhost:8080` in the browser and log in with default credentials.
 ```bash
 id: airflow
 password: airflow
@@ -30,7 +30,7 @@ Refer to [the official document of apache airflow](https://airflow.apache.org/do
 
 ## Create Raw BigQuery Table
 You will need a BigQuery table as a raw data source in your GCP project.
-We will use `bigquery-public-data.austin_bikeshare.bikeshare_trips` dataset to create a dummy table.
+We will use the `bigquery-public-data.austin_bikeshare.bikeshare_trips` dataset to create a dummy table.
 
 ```sql
 CREATE TABLE {your_dataset_name}.trips AS (

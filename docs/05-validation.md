@@ -1,8 +1,8 @@
 # Validation
 
-There is a lot of ways to validate the ETL process and results. For example, [`dbt`](https://www.getdbt.com/) is one of the great way to validate the pipeline.
+There is a lot of ways to validate the ETL process and results. For example, [`dbt`](https://www.getdbt.com/) is a great way to validate the pipeline.
 
-However, you can utilize Airflow Operators such as `BigQueryValuCheckOperator` or `BigQueryCheckOperator` to add a simple validation task to your dag. 
+However, you can utilize Airflow Operators such as `BigQueryValueCheckOperator` or `BigQueryCheckOperator` to add a simple validation task to your dag. 
 
 ## `BigQueryValueCheckOperator`
 
@@ -52,4 +52,4 @@ SELECT count(*)
 FROM test_dataset.long_trips
 WHERE duration_minutes > 1000
 ```
-This will only fail if the count(*) == 0. 
+This validation will only fail if the count(*) == 0.

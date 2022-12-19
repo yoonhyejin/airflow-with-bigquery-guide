@@ -1,21 +1,25 @@
 # Authenticate Google Cloud Connection
 
-To integrate Airflow with BigQuery, you need to create a connection between GCP and Airflow.
+To integrate Airflow with BigQuery, you need to set up a connection between GCP and Airflow.
 
 ## Create a GCP Service Account 
 
-First, you need a GCP service account with certain permissions such as `bigquery.jobs.create`, 
+First, you need a GCP service account with specific permissions such as `bigquery.jobs.create`, 
 `bigquery.tables.getData ` and `bigquery.tables.create `. 
 
-Visit `IAM & Admin > Service Account` on GCP console and create a service account with the following role.
+Visit `IAM & Admin > Service Accounts` on GCP console and create a service account with the following role.
 
 * BigQuery User 
 * BigQuery Data Editor 
 
 ![add-sa](/airflow-with-bigquery-guide/img/add-sa.png)
 
-After saving the service account, navigate to `Key` on detail page. 
-Go to `ADD KEY > Create new key` and select key type as `JSON`. 
+After saving the service account, navigate to `Actions > Mnanage Keys `. 
+
+![manage-keys](/airflow-with-bigquery-guide/img/manage-keys.png)
+
+
+Go to `ADD KEY > Create new key` and select the key type as `JSON`. 
 It will automatically download json file on local device. 
 
 ![add-sa-key](/airflow-with-bigquery-guide/img/add-sa-key.png)

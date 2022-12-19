@@ -1,12 +1,12 @@
 # Write DAG with ETL Tasks
 
-In this part, we will write a simple DAG that performs ETL task with `BigQueryOperator`. 
-BigQueryOperator executes BigQuery SQL queries and save the result to the destination table, so it is a great way to create a pipeline that loads data mart from another table. 
+In this part, we will write a simple DAG that performs an ETL task with `BigQueryOperator`. 
+BigQueryOperator executes BigQuery SQL queries and saves the result to the destination table, a great way to create a pipeline that loads a data mart from another table. 
 
-You will need two files under `/dags` directory: 
+You will need two files under the `./dags` directory: 
 
-* `tutorial_dags.py` : we will define the DAG that contains BigQueryOperator. 
-* `query.sql` : we will write a SQL query to load data.
+* `tutorial_dags.py`: we will define the DAG that contains BigQueryOperator. 
+* `query.sql`: we will write a SQL query to load data.
 
 ## Create a Model Object with BigQueryOperator
 
@@ -39,24 +39,24 @@ with models.DAG(
 
 Some of the basic parameters are like following: 
 
-* `sql` : The sql code to be executed. 
-* `destination_dataset_table` : A dotted `(<project>.|<project>:)<dataset>.<table>` that, if set, will store the results of the query. (templated)
+* `sql`: The SQL code to be executed. 
+* `destination_dataset_table`: A dotted `(<project>.|<project>:)<dataset>.<table>` that, if set, will store the results of the query. (templated)
 * `write_dispoistion`: Specifies the action that occurs if the destination table already exists.
      - WRITE_EMPTY: Write data if the destination table is empty.
      - WRITE_TRUNCATE: Overwrite the destination table data.
      - WRITE_APPEND: Append to the existing table data.
-* `gcp_conn_id` : Reference to google cloud connection. 
+* `gcp_conn_id`: Reference to google cloud connection. 
 
-For more information of `BigQueryOperator`, please refer to the [official documentation](https://airflow.apache.org/docs/apache-airflow/1.10.3/_api/airflow/contrib/operators/bigquery_operator/index.html).
+For more information on `BigQueryOperator`, please refer to the [official documentation](https://airflow.apache.org/docs/apache-airflow/1.10.3/_api/airflow/contrib/operators/bigquery_operator/index.html).
 
 ## Write Query
-In `query.sql`, we will define a simple query that filters rows with duration_minutes more than 100. 
+In `query.sql`, we will define a simple query that filters row with duration_minutes of more than 100. 
 ```sql
 SELECT *
 FROM test_dataset.trips
 WHERE duration_minutes > 100;
 ```
 
-We will not cover complicated SQL syntax or transformation process in this guide, but you can always look up for more variations. 
+We will not cover complicated SQL syntax or transformation processes in this guide, but you can always look up more variations. 
 
 Now that we have our DAG, let's run and test it! 
