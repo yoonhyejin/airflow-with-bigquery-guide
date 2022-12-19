@@ -1,5 +1,5 @@
 site_name: Airflow with BigQuery Guide
-site_url: https://example.com/
+site_url: https://yoonhyejin.github.io/airflow-with-bigquery-guide/
 nav:
   - Introduction: index.md
   - Set Up Environment: 01-set-up.md

@@ -12,19 +12,19 @@ Visit `IAM & Admin > Service Account` on GCP console and create a service accoun
 * BigQuery User 
 * BigQuery Data Editor 
 
-![add-sa](/docs/img/add-sa.png)
+![add-sa](/airflow-with-bigquery-guide/img/add-sa.png)
 
 After saving the service account, navigate to `Key` on detail page. 
 Go to `ADD KEY > Create new key` and select key type as `JSON`. 
 It will automatically download json file on local device. 
 
-![add-sa-key](/docs/img/add-sa-key.png)
+![add-sa-key](/airflow-with-bigquery-guide/img/add-sa-key.png)
 
 ## Add an Airflow Connection
 
 On Airflow UI, go to `Admin > Connections`. Create a connection with following configuration.
 
-![add-connection](/docs/img/add-connection.png)
+![add-connection](/airflow-with-bigquery-guide/img/add-connection.png)
 
 * Connection Id : Your preferable connection id (ex. google-cloud-conn-id)
 * Connection Type : `Google Cloud`

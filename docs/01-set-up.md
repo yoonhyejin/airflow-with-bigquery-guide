@@ -24,7 +24,7 @@ id: airflow
 password: airflow
 ```
 Now, you will see the list of example dags.
-![airflow-example-dags](/docs/img/airflow-example-dags.png)
+![airflow-example-dags](/airflow-with-bigquery-guide/img/airflow-example-dags.png)
 
 Refer to [the official document of apache airflow](https://airflow.apache.org/docs/apache-airflow/stable/tutorial/pipeline.html) for more information.
 
