@@ -10,4 +10,4 @@ Activate and trigger the DAG manually.
 
 After the DAG is finished successfully, check the BigQuery destination table to see the data mart that is just created.
 
-![destination-table](/img/destination-table.png)
+![destination-table](/docs/img/destination-table.png)
