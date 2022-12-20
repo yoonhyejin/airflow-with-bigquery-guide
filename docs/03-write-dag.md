@@ -8,6 +8,8 @@ You will need two files under the `./dags` directory:
 * `tutorial_dags.py`: we will define the DAG that contains BigQueryOperator. 
 * `query.sql`: we will write a query to load data.
 
+Refer to the [GitHub Repository](https://github.com/yoonhyejin/airflow-with-bigquery-guide/blob/main/dags/tutorial_dag.py) for full code.
+
 ## Create a Model Object with BigQueryOperator
 
 First, create a DAG model with BigQueryOperator in `tutorial_dags.py`.  

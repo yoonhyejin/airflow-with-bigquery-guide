@@ -3,7 +3,7 @@ from __future__ import annotations
 from datetime import datetime
 
 from airflow import models
-# from airflow.contrib.operators.bigquery_operator import BigQueryOperator
+from airflow.contrib.operators.bigquery_operator import BigQueryOperator
 from airflow.providers.google.cloud.operators.bigquery import \
     BigQueryValueCheckOperator, BigQueryCheckOperator
 
