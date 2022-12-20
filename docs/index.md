@@ -1,11 +1,12 @@
 # A Friendly Guide to integrate Airflow with BigQuery
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fyoonhyejin.github.io%2Fairflow-with-bigquery-guide%2F&count_bg=%233964C3&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-Airflow is a popular tool for scheduling and executing ETL(Extract, Transform, Load) in modern data engineering. 
-Also, BigQuery is one of the most frequently used data warehouses for ETL because of its flexibility and convenience.
+[Airflow](https://airflow.apache.org/) is a popular workflow tool for scheduling and monitoring the ETL(Extract, Transform, Load) process in modern data engineering.
+It allows users to create a data pipeline between various data sources such as RDBMS, API, spreadsheet, and data warehouse. 
 
-This guide introduces how to create a simple batch ETL pipeline by integrating Airflow with BigQuery.
-The following tutorial is appropriate for users who understand the ETL process, Airflow, and Bigquery.
+[BigQuery](https://cloud.google.com/bigquery/), Google's managed data warehouse, is one of the most frequently used data warehouses for its flexibility and convenience.
+
+This guide introduces how to create a simple batch ETL pipeline by integrating Airflow with BigQuery. 
+The following tutorial is appropriate for users who have basic experience with the ETL process, Bigquery, and writing Airflow DAG,
 
 ## Requirements
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)

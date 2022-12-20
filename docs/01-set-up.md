@@ -12,7 +12,7 @@ curl -LfO 'https://airflow.apache.org/docs/apache-airflow/stable/docker-compose.
 mkdir -p ./dags ./logs ./plugins
 echo -e "AIRFLOW_UID=$(id -u)" > .env
 
-# exeucte init process
+# execute init process
 docker-compose up airflow-init
 
 # install all components
