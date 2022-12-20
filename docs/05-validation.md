@@ -2,7 +2,7 @@
 
 There is a lot of ways to validate the ETL process and results. For example, [`dbt`](https://www.getdbt.com/) is a great way to validate the pipeline.
 
-However, you can utilize Airflow Operators such as `BigQueryValueCheckOperator` or `BigQueryCheckOperator` to add a simple validation task to your dag. 
+However, you can utilize Airflow Operators such as `BigQueryValueCheckOperator` or `BigQueryCheckOperator` to add a simple validation task to your DAG. 
 
 ## `BigQueryValueCheckOperator`
 

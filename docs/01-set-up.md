@@ -1,10 +1,10 @@
 # Set Up 
 
-## Set Up Airflow on Local Environment
-This guide uses docker-compose to deploy Airflow on the local environment. 
+## Deploy Airflow on Local Environment
+This guide uses [docker-compose](https://github.com/docker/compose) to deploy Airflow on the local environment. 
 If you already have Airflow deployed on a cloud environment, please skip this part.
 
-Make sure you have Docker Desktop engine running on the local environment before installation. 
+> Make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop/) engine running on the local environment before installation. 
 
 ```bash
 # download docker-compose.yaml for Airflow 
@@ -23,7 +23,7 @@ Visit `localhost:8080` in the browser and log in with default credentials.
 id: airflow
 password: airflow
 ```
-Now, you will see the list of example dags.
+Now, you will see the list of example DAGs.
 ![airflow-example-dags](/airflow-with-bigquery-guide/img/airflow-example-dags.png)
 
 Refer to [the official document of apache airflow](https://airflow.apache.org/docs/apache-airflow/stable/tutorial/pipeline.html) for more information.

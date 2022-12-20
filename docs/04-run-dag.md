@@ -7,8 +7,9 @@ Place `tutorial_dag.py` and `query.sql` under the `./dags` directory like below.
 │   ├── tutorial_dag.py
 │   └── query.sql
 ```
-After a slight delay, you can search the DAG on Web UI. 
+After a slight delay, you can search the DAG by `dag_id` on Airflow UI. 
 
+![trigger-dag](/airflow-with-bigquery-guide/img/trigger-dag.png)
 Activate and trigger the DAG manually. 
 
 ## Check Data on BigQuery

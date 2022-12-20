@@ -1,6 +1,6 @@
 # Wrap Up
 
-Congratulations, you successfully integrated Airflow with BigQuery!
+Congratulations, you successfully integrated Airflow with BigQuery! 👍
 
 This guide intentionally covers a limited variation of ETL processes/Operators to focus on the integration itself, 
 but this will be a great starting point. 

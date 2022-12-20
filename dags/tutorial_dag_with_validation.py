@@ -3,9 +3,9 @@ from __future__ import annotations
 from datetime import datetime
 
 from airflow import models
-from airflow.contrib.operators.bigquery_operator import BigQueryOperator
+# from airflow.contrib.operators.bigquery_operator import BigQueryOperator
 from airflow.providers.google.cloud.operators.bigquery import \
-    BigQueryValueCheckOperator
+    BigQueryValueCheckOperator, BigQueryCheckOperator
 
 project_id = "starlit-sum-372013"
 destination_table_id = "test_dataset.long_trips"
@@ -35,10 +35,9 @@ with models.DAG(
         use_legacy_sql=False,
     )
 
-    validate_2 = BigQueryValueCheckOperator(
+    validate_2 = BigQueryCheckOperator(
         task_id="validate_2",
         sql="bigquery_check.sql",
-        pass_value=0,
         gcp_conn_id="google_cloud_conn_id",
         use_legacy_sql=False,
     )

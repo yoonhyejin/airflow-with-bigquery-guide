@@ -10,7 +10,7 @@ You will need two files under the `./dags` directory:
 
 ## Create a Model Object with BigQueryOperator
 
-First, create a dag model with BigQueryOperator in `tutorial_dags.py`.  
+First, create a DAG model with BigQueryOperator in `tutorial_dags.py`.  
 ```python
 
 from airflow import models
@@ -39,12 +39,12 @@ with models.DAG(
 
 Some of the basic parameters are like following: 
 
-* `sql`: The SQL code to be executed. 
-* `destination_dataset_table`: A dotted `(<project>.|<project>:)<dataset>.<table>` that, if set, will store the results of the query. (templated)
+* `sql`: The SQL query to be executed. It can be either a file path or a raw string of SQL query.
+* `destination_dataset_table`:  BigQuery table that will store the results of the query. (ex. `<dataset>.<table>`)
 * `write_dispoistion`: Specifies the action that occurs if the destination table already exists.
-     - WRITE_EMPTY: Write data if the destination table is empty.
-     - WRITE_TRUNCATE: Overwrite the destination table data.
-     - WRITE_APPEND: Append to the existing table data.
+     - `WRITE_EMPTY`: Write data if the destination table is empty.
+     - `WRITE_TRUNCATE`: Overwrite the destination table data.
+     - `WRITE_APPEND`: Append to the existing table data.
 * `gcp_conn_id`: Reference to google cloud connection. 
 
 For more information on `BigQueryOperator`, please refer to the [official documentation](https://airflow.apache.org/docs/apache-airflow/1.10.3/_api/airflow/contrib/operators/bigquery_operator/index.html).
