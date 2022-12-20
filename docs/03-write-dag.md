@@ -1,12 +1,12 @@
 # Write DAG with ETL Tasks
 
 In this part, we will write a simple DAG that performs an ETL task with `BigQueryOperator`. 
-BigQueryOperator executes BigQuery SQL queries and saves the result to the destination table, a great way to create a pipeline that loads a data mart from another table. 
+BigQueryOperator executes BigQuery SQL query and saves the result to the destination table, a great way to create a pipeline that loads a data mart from another table. 
 
 You will need two files under the `./dags` directory: 
 
 * `tutorial_dags.py`: we will define the DAG that contains BigQueryOperator. 
-* `query.sql`: we will write a SQL query to load data.
+* `query.sql`: we will write a query to load data.
 
 ## Create a Model Object with BigQueryOperator
 

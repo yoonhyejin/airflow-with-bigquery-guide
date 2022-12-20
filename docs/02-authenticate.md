@@ -24,7 +24,7 @@ It will automatically download json file on local device.
 
 ![add-sa-key](/airflow-with-bigquery-guide/img/add-sa-key.png)
 
-## Add an Airflow Connection
+## Add Airflow Connection
 
 On Airflow UI, go to `Admin > Connections`. Create a connection with following configuration.
 
