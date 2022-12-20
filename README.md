@@ -8,7 +8,7 @@ It allows users to create a data pipeline between various data sources such as R
 [BigQuery](https://cloud.google.com/bigquery/), Google's managed data warehouse, is one of the most frequently used data warehouses for its flexibility and convenience.
 
 This guide introduces how to create a simple batch ETL pipeline by integrating Airflow with BigQuery. 
-The following tutorial is appropriate for users who have basic experience with the ETL process, Bigquery, and writing Airflow DAG,
+The following tutorial is appropriate for users who have a basic experience with the ETL process, Bigquery, and writing Airflow DAG,
 
 * [Guide](https://yoonhyejin.github.io/airflow-with-bigquery-guide/)
 * [Sample DAGs](https://github.com/yoonhyejin/airflow-with-bigquery-guide/tree/main/dags) 
