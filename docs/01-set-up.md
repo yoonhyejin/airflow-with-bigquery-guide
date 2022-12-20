@@ -1,7 +1,7 @@
 # Set Up 
 
 ## Deploy Airflow on Local Environment
-This guide uses [docker-compose](https://github.com/docker/compose) to deploy Airflow on the local environment. 
+This guide uses [docker-compose](https://github.com/docker/compose) to deploy Airflow on the local environment to help you start from scratch. 
 If you already have Airflow deployed on a cloud environment, please skip this part.
 
 > Make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop/) engine running on the local environment before installation. 
